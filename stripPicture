@@ -4,6 +4,9 @@
 fullname="$1"
 mime="$2"
 exportPicture="$3"
+LOG=~/.log
+
+echo $mime >> $LOG
 
 # thumbnail options by mime type
 case "$mime" in
@@ -24,7 +27,8 @@ case "$mime" in
       ;;
 
       video/*)
-      ffmpegthumbnailer -i "$fullname" -o "$exportPicture" -c png
+      echo Video >> $LOG
+      ffmpegthumbnailer -i "$fullname" -o "$exportPicture" -c png >> $LOG 2>&1
       exit
       ;;
 
