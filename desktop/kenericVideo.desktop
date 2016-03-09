@@ -3,7 +3,7 @@ Type=Service
 Name=Video files (Keneric)
 
 X-KDE-ServiceTypes=ThumbCreator
-MimeType=video/x-ms-wmv;video/x-msvideo;video/quicktime;video/mpeg;video/x-matroska;video/webm;
+MimeType=video/x-ms-wmv;video/x-msvideo;video/quicktime;video/mpeg;video/x-matroska;video/webm;video/mp4;
 
 X-KDE-Library=keneric
 CacheThumbnail=true
