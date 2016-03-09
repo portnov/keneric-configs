@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=Gimp palettes (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=application/x-gimp-palette;
+
+X-KDE-Library=keneric
+CacheThumbnail=true
+

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Service
+Name=Krita Documents (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=application/x-krita;image/openraster;
+
+X-KDE-Library=keneric
+CacheThumbnail=true

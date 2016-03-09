@@ -1,0 +1,35 @@
+#!/bin/sh
+# Usage: stripPicture fullname mime exportPicture
+
+fullname="$1"
+mime="$2"
+exportPicture="$3"
+
+# thumbnail options by mime type
+case "$mime" in
+
+      application/x-krita)
+      unzip -p "$fullname" preview.png > "$exportPicture"
+      exit
+      ;;
+      
+      image/openraster)
+      unzip -p "$fullname" Thumbnails/thumbnail.png > "$exportPicture"
+      exit
+      ;;
+
+      application/x-gimp-palette)
+      convert_palette.py -o "$exportPicture" -f image "$fullname"
+      exit
+      ;;
+
+      video/*)
+      ffmpegthumbnailer -i "$fullname" -o "$exportPicture" -c png
+      exit
+      ;;
+
+      *)
+#     case trap
+      exit
+      
+esac
