@@ -27,8 +27,12 @@ case "$mime" in
       ;;
 
       video/*)
-      echo Video >> $LOG
       ffmpegthumbnailer -i "$fullname" -o "$exportPicture" -c png >> $LOG 2>&1
+      exit
+      ;;
+
+      application/x-blender)
+      blender-thumbnailer.py "$fullname" "$exportPicture" >> $LOG 2>&1
       exit
       ;;
 
