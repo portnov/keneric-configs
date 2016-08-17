@@ -21,7 +21,8 @@ case "$mime" in
       exit
       ;;
 
-      application/x-gimp-palette)
+      image/x-gimp-palette)
+      echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
       convert_palette.py -o "$exportPicture" -f image "$fullname"
       exit
       ;;
