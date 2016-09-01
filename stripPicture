@@ -27,6 +27,12 @@ case "$mime" in
       exit
       ;;
 
+      application/x-adobe-swatch-exchange)
+      echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
+      convert_palette.py -o "$exportPicture" -f image "$fullname"
+      exit
+      ;;
+
       video/*)
       ffmpegthumbnailer -i "$fullname" -o "$exportPicture" -c png >> $LOG 2>&1
       exit

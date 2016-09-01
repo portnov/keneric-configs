@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=Adobe ASE palettes (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=application/x-adobe-swatch-exchange;
+
+X-KDE-Library=keneric
+CacheThumbnail=true
+
