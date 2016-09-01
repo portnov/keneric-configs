@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=Scribus swatches files (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=image/x-scribus-palette;
+
+X-KDE-Library=keneric
+CacheThumbnail=true
+

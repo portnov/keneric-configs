@@ -27,7 +27,25 @@ case "$mime" in
       exit
       ;;
 
+      image/x-create-palette)
+      echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
+      convert_palette.py -o "$exportPicture" -f image "$fullname"
+      exit
+      ;;
+
+      image/x-scribus-palette)
+      echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
+      convert_palette.py -o "$exportPicture" -f image "$fullname"
+      exit
+      ;;
+
       application/x-adobe-swatch-exchange)
+      echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
+      convert_palette.py -o "$exportPicture" -f image "$fullname"
+      exit
+      ;;
+
+      application/x-adobe-colors)
       echo convert_palette.py -o "$exportPicture" -f image "$fullname" >> $LOG 2>&1
       convert_palette.py -o "$exportPicture" -f image "$fullname"
       exit

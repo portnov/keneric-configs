@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="image/x-create-palette">
+        <comment>CREATE palette file</comment>
+        <icon name="gimp"/>
+        <magic>
+          <match type="string" offset="0:40" value="&lt;colors&gt;"/>
+        </magic>
+        <glob pattern="*.xml"/>
+    </mime-type>
+</mime-info>

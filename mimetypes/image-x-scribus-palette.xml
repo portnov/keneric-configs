@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime-info xmlns="http://www.freedesktop.org/standards/shared-mime-info">
+    <mime-type type="image/x-scribus-palette">
+        <comment>Scribus swatches file</comment>
+        <magic>
+          <match type="string" offset="0:40" value="&lt;SCRIBUSCOLORS"/>
+        </magic>
+        <glob pattern="*.xml"/>
+    </mime-type>
+</mime-info>

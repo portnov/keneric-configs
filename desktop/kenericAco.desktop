@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=Adobe ACO palettes (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=application/x-adobe-colors;
+
+X-KDE-Library=keneric
+CacheThumbnail=true
+

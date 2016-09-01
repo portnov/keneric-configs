@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Service
+Name=CREATE XML palettes (Keneric)
+
+X-KDE-ServiceTypes=ThumbCreator
+MimeType=image/x-create-palette;
+
+X-KDE-Library=keneric
+CacheThumbnail=true
+
